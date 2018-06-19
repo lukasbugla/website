@@ -1,0 +1,252 @@
+:root {
+  --primary: #bb9563;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #191919;
+  line-height: 1.4;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #7f7f7f;
+  border-bottom: 1px solid transparent;
+  position: relative;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #7f7f7f;
+}
+a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  width: 0;
+  bottom: -4px;
+  height: 1px;
+  background: rgba(187, 149, 99, 0.6);
+  transition: 0.2s all;
+}
+a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+.row.bottom {
+  align-items: flex-end;
+}
+.row.center {
+  align-items: center;
+}
+.row > * {
+  flex-grow: 1;
+  flex-basis: 1px;
+  margin-right: 32px;
+}
+.row > *:last-child {
+  margin-right: 0;
+}
+
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+
+header {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 96px;
+}
+header a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  top: -10px;
+}
+
+section {
+  border-bottom: 1px solid #e1e1e0;
+  padding-bottom: 80px;
+}
+
+section h2 {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 2px;
+  color: var(--primary);
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.lead {
+  font-size: 36px;
+  line-height: 1.33;
+  color: var(--primary);
+}
+
+#start .socialMedia {
+  list-style: none;
+  display: flex;
+  margin-top: 40px;
+}
+#start .socialMedia a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 24px;
+}
+
+#biography img {
+  margin-bottom: 40px;
+  max-width: 100%;
+  width: 100%;
+}
+
+#expertise ul {
+  list-style: none;
+  color: var(--primary);
+  margin-top: 30px;
+  margin-bottom: 45px;
+  font-size: 18px;
+  line-height: 1.1;
+}
+#expertise li {
+  margin-bottom: 18px;
+}
+
+#process {
+  margin-top: 40px;
+  background-image: url('img/process.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 27%;
+  position: relative;
+}
+#process .row {
+  position: absolute;
+  top: 46.7%;
+}
+#process .heading {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+}
+#process .heading ul {
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-top: 6px;
+  margin-left: -100px;
+  background-color: #191919;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+  width: 160px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  border-radius: 3px;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: 0.2s all ease-out;
+  z-index: 2;
+}
+#process .heading:hover ul {
+  opacity: 1;
+  transform: translateY(0);
+}
+#process .heading ul::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-top: -3px;
+  margin-left: -3px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 2.5px 3px 2.5px;
+  border-color: transparent transparent #191919 transparent;
+}
+#process .heading li {
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+#expertise .hover {
+  display: block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.25);
+  margin-top: 50px;
+  text-align: center;
+}
+#expertise .hover img {
+  margin-right: 5px;
+  position: relative;
+  top: 3px;
+  animation: MoveUpDown 1.5s infinite;
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    top: 5px;
+  }
+  50% {
+    top: 1px;
+  }
+}
+
+#contact {
+  border: none;
+}
+
+footer {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 40px;
+}
+footer .sf {
+  margin-bottom: 5px;
+}
+footer .logo {
+  width: 30px;
+  filter: grayscale(100%) brightness(0%);
+}

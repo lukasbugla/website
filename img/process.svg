@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="962" height="260" viewBox="0 0 962 260">
+    <defs>
+        <linearGradient id="a" x1="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#DFA961"/>
+            <stop offset="100%" stop-color="#BB9563"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(1)">
+        <path stroke="#CCC" stroke-linecap="square" d="M127 3h123.5M361 3h123.5M595 3h123.5M709 257h123.5M476 257h123.5M241 257h123.5"/>
+        <ellipse cx="129.013" cy="129.932" stroke="#8E8E8E" rx="129.013" ry="126.932"/>
+        <ellipse cx="363.013" cy="129.932" stroke="#CCC" rx="129.013" ry="126.932"/>
+        <ellipse cx="597.013" cy="129.932" stroke="#CCC" rx="129.013" ry="126.932"/>
+        <ellipse cx="831.013" cy="129.932" stroke="#CCC" rx="129.013" ry="126.932"/>
+        <path fill="#CCC" d="M250.042.074v6l4.515-3zM485 0v6l4.515-3zM719 0v6l4.515-3zM710.515 260v-6L706 257zM477.515 260v-6L473 257zM242.515 260v-6L238 257z"/>
+        <path fill="url(#a)" d="M703.055 153H2.134A125.154 125.154 0 0 1 0 129.932C0 121.75.79 113.75 2.3 106H957.725c1.51 7.75 2.3 15.75 2.3 23.932 0 7.877-.733 15.587-2.135 23.068H703.055z"/>
+    </g>
+</svg>
