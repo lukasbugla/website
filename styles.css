@@ -81,6 +81,13 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 96px;
+  transition: 0.5s all ease-out;
+  opacity: 0;
+  transform: translateY(-60px);
+}
+.visible header {
+  opacity: 1;
+  transform: translateY(0px);
 }
 header a {
   text-transform: uppercase;
@@ -88,6 +95,17 @@ header a {
   font-weight: 600;
   position: relative;
   top: -10px;
+}
+
+main {
+  transition: 0.5s all ease-out;
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.visible main {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 section {
@@ -145,10 +163,6 @@ section h2 {
 
 #process {
   margin-top: 40px;
-  background-image: url('img/process.svg');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding-top: 27%;
   position: relative;
 }
 #process .row {
@@ -156,19 +170,21 @@ section h2 {
   top: 46.7%;
 }
 #process .heading {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  color: white;
+  color: var(--primary);
   margin: 0;
+  letter-spacing: 2px;
   position: relative;
   cursor: pointer;
 }
 #process .heading ul {
-  padding-top: 18px;
-  padding-bottom: 14px;
-  padding-left: 20px;
-  padding-right: 20px;
+  letter-spacing: 0;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   position: absolute;
   left: 50%;
   top: 100%;
@@ -177,7 +193,7 @@ section h2 {
   background-color: #191919;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
   width: 160px;
-  text-align: center;
+  text-align: left;
   color: white;
   font-size: 14px;
   font-weight: 500;
@@ -211,6 +227,21 @@ section h2 {
 #process .heading li {
   line-height: 1.4;
   margin-bottom: 10px;
+}
+
+#process ellipse {
+  transition: all 0.6s linear;
+}
+
+#process path,
+#process .heading {
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+#process.visible path,
+#process.visible .heading {
+  opacity: 1;
 }
 
 #expertise .hover {
@@ -251,4 +282,28 @@ footer .sf {
 footer .logo {
   width: 30px;
   filter: grayscale(100%) brightness(0%);
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    margin-bottom: 50px;
+  }
+
+  .lead {
+    font-size: 24px;
+  }
+
+  main .row {
+    flex-direction: column;
+  }
+
+  #expertise ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #process,
+  #expertise .hover {
+    display: none;
+  }
 }
