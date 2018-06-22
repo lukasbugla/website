@@ -20,7 +20,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #7f7f7f;
+  color: #909090;
 }
 a::after {
   content: '';
@@ -92,7 +92,7 @@ header {
 header a {
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 2px;
   position: relative;
   top: -10px;
@@ -140,7 +140,7 @@ section h2 {
 #start .socialMedia a {
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 2px;
   margin-right: 24px;
 }
