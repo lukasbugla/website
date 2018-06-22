@@ -92,7 +92,8 @@ header {
 header a {
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 600
+  letter-spacing: 2px;
   position: relative;
   top: -10px;
 }
@@ -140,6 +141,7 @@ section h2 {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
+  letter-spacing: 2px;
   margin-right: 24px;
 }
 
